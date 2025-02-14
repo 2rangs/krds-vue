@@ -95,7 +95,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-danger-60)" },
       { level: "70", value: "var(--color-danger-70)" },
       { level: "80", value: "var(--color-danger-80)" },
-      { level: "90", value: "var(--color-danger-90)" }
+      { level: "90", value: "var(--color-danger-90)" },
+      { level: "100", value: "var(--color-danger-100)" }
     ],
   },
   {
@@ -112,7 +113,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-warning-60)" },
       { level: "70", value: "var(--color-warning-70)" },
       { level: "80", value: "var(--color-warning-80)" },
-      { level: "90", value: "var(--color-warning-90)" }
+      { level: "90", value: "var(--color-warning-90)" },
+      { level: "100", value: "var(--color-warning-100)" }
     ],
   },
   {
@@ -129,7 +131,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-success-60)" },
       { level: "70", value: "var(--color-success-70)" },
       { level: "80", value: "var(--color-success-80)" },
-      { level: "90", value: "var(--color-success-90)" }
+      { level: "90", value: "var(--color-success-90)" },
+      { level: "100", value: "var(--color-success-100)" }
     ],
   },
   {
@@ -146,7 +149,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-info-60)" },
       { level: "70", value: "var(--color-info-70)" },
       { level: "80", value: "var(--color-info-80)" },
-      { level: "90", value: "var(--color-info-90)" }
+      { level: "90", value: "var(--color-info-90)" },
+      { level: "100", value: "var(--color-info-100)" }
     ],
   },
   {
@@ -162,7 +166,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-navy-60)" },
       { level: "70", value: "var(--color-navy-70)" },
       { level: "80", value: "var(--color-navy-80)" },
-      { level: "90", value: "var(--color-navy-90)" }
+      { level: "90", value: "var(--color-navy-90)" },
+      { level: "100", value: "var(--color-navy-100)" }
     ],
   },
   {
@@ -178,7 +183,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-skyblue-60)" },
       { level: "70", value: "var(--color-skyblue-70)" },
       { level: "80", value: "var(--color-skyblue-80)" },
-      { level: "90", value: "var(--color-skyblue-90)" }
+      { level: "90", value: "var(--color-skyblue-90)" },
+      { level: "100", value: "var(--color-skyblue-100)" }
     ],
   },
   {
@@ -194,7 +200,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-aqua-60)" },
       { level: "70", value: "var(--color-aqua-70)" },
       { level: "80", value: "var(--color-aqua-80)" },
-      { level: "90", value: "var(--color-aqua-90)" }
+      { level: "90", value: "var(--color-aqua-90)" },
+      { level: "100", value: "var(--color-aqua-100)" }
     ],
   },
   {
@@ -210,7 +217,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-teal-60)" },
       { level: "70", value: "var(--color-teal-70)" },
       { level: "80", value: "var(--color-teal-80)" },
-      { level: "90", value: "var(--color-teal-90)" }
+      { level: "90", value: "var(--color-teal-90)" },
+      { level: "100", value: "var(--color-teal-100)" }
     ],
   },
   {
@@ -226,7 +234,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-green-60)" },
       { level: "70", value: "var(--color-green-70)" },
       { level: "80", value: "var(--color-green-80)" },
-      { level: "90", value: "var(--color-green-90)" }
+      { level: "90", value: "var(--color-green-90)" },
+      { level: "100", value: "var(--color-green-100)" }
     ],
   },
   {
@@ -242,7 +251,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-limegreen-60)" },
       { level: "70", value: "var(--color-limegreen-70)" },
       { level: "80", value: "var(--color-limegreen-80)" },
-      { level: "90", value: "var(--color-limegreen-90)" }
+      { level: "90", value: "var(--color-limegreen-90)" },
+      { level: "100", value: "var(--color-limegreen-100)" }
     ],
   },{
     name: "Lime",
@@ -257,7 +267,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-lime-60)" },
       { level: "70", value: "var(--color-lime-70)" },
       { level: "80", value: "var(--color-lime-80)" },
-      { level: "90", value: "var(--color-lime-90)" }
+      { level: "90", value: "var(--color-lime-90)" },
+      { level: "100", value: "var(--color-lime-100)" }
     ],
   },
   {
@@ -273,7 +284,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-olive-60)" },
       { level: "70", value: "var(--color-olive-70)" },
       { level: "80", value: "var(--color-olive-80)" },
-      { level: "90", value: "var(--color-olive-90)" }
+      { level: "90", value: "var(--color-olive-90)" },
+      { level: "100", value: "var(--color-olive-100)" }
     ],
   },
   {
@@ -289,7 +301,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-yellow-60)" },
       { level: "70", value: "var(--color-yellow-70)" },
       { level: "80", value: "var(--color-yellow-80)" },
-      { level: "90", value: "var(--color-yellow-90)" }
+      { level: "90", value: "var(--color-yellow-90)" },
+      { level: "100", value: "var(--color-yellow-100)" }
     ],
   },
   {
@@ -305,7 +318,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-gold-60)" },
       { level: "70", value: "var(--color-gold-70)" },
       { level: "80", value: "var(--color-gold-80)" },
-      { level: "90", value: "var(--color-gold-90)" }
+      { level: "90", value: "var(--color-gold-90)" },
+      { level: "100", value: "var(--color-gold-100)" }
     ],
   },
   {
@@ -321,7 +335,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-saddlebrown-60)" },
       { level: "70", value: "var(--color-saddlebrown-70)" },
       { level: "80", value: "var(--color-saddlebrown-80)" },
-      { level: "90", value: "var(--color-saddlebrown-90)" }
+      { level: "90", value: "var(--color-saddlebrown-90)" },
+      { level: "100", value: "var(--color-saddlebrown-100)" }
     ],
   },
   {
@@ -337,7 +352,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-brown-60)" },
       { level: "70", value: "var(--color-brown-70)" },
       { level: "80", value: "var(--color-brown-80)" },
-      { level: "90", value: "var(--color-brown-90)" }
+      { level: "90", value: "var(--color-brown-90)" },
+      { level: "100", value: "var(--color-brown-100)" }
     ],
   },
   {
@@ -353,7 +369,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-darkred-60)" },
       { level: "70", value: "var(--color-darkred-70)" },
       { level: "80", value: "var(--color-darkred-80)" },
-      { level: "90", value: "var(--color-darkred-90)" }
+      { level: "90", value: "var(--color-darkred-90)" },
+      { level: "100", value: "var(--color-darkred-100)" }
     ],
   },
   {
@@ -369,7 +386,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-red-60)" },
       { level: "70", value: "var(--color-red-70)" },
       { level: "80", value: "var(--color-red-80)" },
-      { level: "90", value: "var(--color-red-90)" }
+      { level: "90", value: "var(--color-red-90)" },
+      { level: "100", value: "var(--color-red-100)" }
     ],
   },
   {
@@ -385,7 +403,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-orange-60)" },
       { level: "70", value: "var(--color-orange-70)" },
       { level: "80", value: "var(--color-orange-80)" },
-      { level: "90", value: "var(--color-orange-90)" }
+      { level: "90", value: "var(--color-orange-90)" },
+      { level: "100", value: "var(--color-orange-100)" }
     ],
   },
   {
@@ -401,7 +420,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-coral-60)" },
       { level: "70", value: "var(--color-coral-70)" },
       { level: "80", value: "var(--color-coral-80)" },
-      { level: "90", value: "var(--color-coral-90)" }
+      { level: "90", value: "var(--color-coral-90)" },
+      { level: "100", value: "var(--color-coral-100)" }
     ],
   },
   {
@@ -417,7 +437,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-salmon-60)" },
       { level: "70", value: "var(--color-salmon-70)" },
       { level: "80", value: "var(--color-salmon-80)" },
-      { level: "90", value: "var(--color-salmon-90)" }
+      { level: "90", value: "var(--color-salmon-90)" },
+      { level: "100", value: "var(--color-salmon-100)" }
     ],
   },
   {
@@ -433,7 +454,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-hotpink-60)" },
       { level: "70", value: "var(--color-hotpink-70)" },
       { level: "80", value: "var(--color-hotpink-80)" },
-      { level: "90", value: "var(--color-hotpink-90)" }
+      { level: "90", value: "var(--color-hotpink-90)" },
+      { level: "100", value: "var(--color-hotpink-100)" },
     ],
   },
   {
@@ -449,7 +471,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-pink-60)" },
       { level: "70", value: "var(--color-pink-70)" },
       { level: "80", value: "var(--color-pink-80)" },
-      { level: "90", value: "var(--color-pink-90)" }
+      { level: "90", value: "var(--color-pink-90)" },
+      { level: "100", value: "var(--color-pink-100)" }
     ],
   },
   {
@@ -465,7 +488,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-fuchsia-60)" },
       { level: "70", value: "var(--color-fuchsia-70)" },
       { level: "80", value: "var(--color-fuchsia-80)" },
-      { level: "90", value: "var(--color-fuchsia-90)" }
+      { level: "90", value: "var(--color-fuchsia-90)" },
+      { level: "100", value: "var(--color-fuchsia-100)" }
     ],
   },
   {
@@ -481,7 +505,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-purple-60)" },
       { level: "70", value: "var(--color-purple-70)" },
       { level: "80", value: "var(--color-purple-80)" },
-      { level: "90", value: "var(--color-purple-90)" }
+      { level: "90", value: "var(--color-purple-90)" },
+      { level: "100", value: "var(--color-purple-100)" }
     ],
   },
   {
@@ -497,7 +522,8 @@ const colors: Color[] = [
       { level: "60", value: "var(--color-blueviolet-60)" },
       { level: "70", value: "var(--color-blueviolet-70)" },
       { level: "80", value: "var(--color-blueviolet-80)" },
-      { level: "90", value: "var(--color-blueviolet-90)" }
+      { level: "90", value: "var(--color-blueviolet-90)" },
+      { level: "100", value: "var(--color-blueviolet-100)" },
     ],
   },
   // 추가 색상 정의
@@ -569,7 +595,7 @@ const copyColorCode = (value : string): void => {
           <div
               v-for="shade in color.shades"
               :key="shade.level"
-              class="h-14 w-14 flex flex-col items-center justify-center rounded-md text-center shadow-sm border border-gray-20 cursor-pointer"
+              class="h-14 w-14 flex flex-col items-center justify-center rounded-md text-center shadow-sm border border-gray-20 cursor-pointer transition-transform transform hover:scale-110 relative"
               :style="{
               backgroundColor: `var(--color-${color.name.toLowerCase()}-${shade.level})`,
               color: getContrastColor(getComputedStyleValue(`--color-${color.name.toLowerCase()}-${shade.level}`))
