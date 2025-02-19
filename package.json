@@ -13,6 +13,8 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.0.0",
     "lucide-vue-next": "^0.475.0",
+    "storybook-dark-mode": "^4.0.2",
+    "storybook-tailwind-dark-mode": "^1.0.22",
     "vue": "^3.5.13"
   },
   "devDependencies": {

@@ -45,6 +45,23 @@ const colors: Color[] = [
       { level: "90", value: "var(--color-secondary-90)" },
       { level: "100", value: "var(--color-secondary-100)" },
     ],
+  },   {
+    name: "Dark-Secondary",
+    info: "Dark Secondary 색상은 Dark 모드에서 primary 색상과 보조를 맞추며, 인터페이스에서 전체적인 보조적인 역할을 한다. 덜 중요한 액션을 표시하거나 구분을 위한 배경으로 사용한다.",
+    shades: [
+      { level: "0", value: "var(--color-dark-secondary-0)" },
+      { level: "5", value: "var(--color-dark-secondary-5)" },
+      { level: "10", value: "var(--color-dark-secondary-10)" },
+      { level: "20", value: "var(--color-dark-secondary-20)" },
+      { level: "30", value: "var(--color-dark-secondary-30)" },
+      { level: "40", value: "var(--color-dark-secondary-40)" },
+      { level: "50", value: "var(--color-dark-secondary-50)" },
+      { level: "60", value: "var(--color-dark-secondary-60)" },
+      { level: "70", value: "var(--color-dark-secondary-70)" },
+      { level: "80", value: "var(--color-dark-secondary-80)" },
+      { level: "90", value: "var(--color-dark-secondary-90)" },
+      { level: "100", value: "var(--color-dark-secondary-100)" },
+    ],
   },  {
     name: "Gray",
         info: "Gray 색상은 주로 배경, 텍스트, 구분 선에 사용되며, 시각적 집중을 방해하지 않고 콘텐츠에 초점을 맞추도록 도와주는 중립적인 색상이다.\n" +
@@ -574,21 +591,21 @@ const copyColorCode = (value : string): void => {
 </script>
 
 <template>
-  <div class="flex justify-center">
+  <div class="flex justify-center ">
     <div class="max-w-4xl w-full space-y-8 p-4">
       <p class="text-3xl font-bold">
         Color Palette
       </p>
-      <div v-for="color in colors" :key="color.name" class="space-y-3 bg-gray-5 p-4">
+      <div v-for="color in colors" :key="color.name" class="space-y-3 p-4">
         <!-- 색상 이름 섹션 -->
-        <div class="flex items-center space-x-3">
+        <div class="flex items-center space-x-3 ">
           <div
               class="w-5 h-5 rounded-full"
               :style="{ backgroundColor: `var(--color-${color.name.toLowerCase()}-50)` }"
           ></div>
-          <p class="text-xl font-bold text-gray-800">{{ color.name }}</p>
+          <p class="text-xl font-bold dark:text-white">{{ color.name }}</p>
         </div>
-        <p v-if="color.info" class="text-sm">{{ color.info }}</p>
+        <p v-if="color.info" class="text-sm dark:text-white">{{ color.info }}</p>
 
         <!-- 색상 팔레트 -->
         <div class="flex flex-wrap gap-2">
