@@ -4,8 +4,10 @@ import Accordion from "./components/Accordion.vue";
 import Button from "./components/Action/Button.vue";
 import Link from "./components/Action/Link.vue";
 import Radio from "./components/Select/Radio.vue";
-import {ref} from "vue";
+import {computed, onMounted, ref} from "vue";
 import CheckBox from "./components/Select/CheckBox.vue";
+import Select from "./components/Select/Select.vue";
+import Toggle from "./components/Select/Toggle.vue";
 
 
 const items = [
@@ -20,21 +22,29 @@ const items = [
 ]
 
 const selectedValue = ref("medium");
+const toggle = ref(false)
+const selected = ref("");
+const checkboxItems = ["옵션1", "옵션2", "옵션3","옵션4", "옵션5", "옵션6","옵션7", "옵션8", "옵션9"]; // 항목 리스트
+const checkboxItems2 = ["옵션1", "옵션2", "옵션3","옵션4"]; // 항목 리스트
+const checkboxItems3 = ["옵션1"]; // 항목 리스트
+const selectedStates = ref([]); // 체크 상태 유지 (true/false 배열)
+const selectedItems = computed(() =>
+  checkboxItems.filter((_, index) => selectedStates.value[index])
+)
 
 
-
-const checkboxItems = ["옵션 1", "옵션 2", "옵션 3"]; // 항목 리스트
-const selectedStates = ref([false, false, false]); // 체크 상태 유지 (true/false 배열)
 </script>
 
 <template>
   <div class="flex justify-center">
-    <div class="w-[1200px]">
-    <div class="w-xl">
+    <div class="w-[1200px] h-[5000px]">
+    <div class="">
       <Accordion :items="items" />
       <div class="flex gap-4 p-3">
-        <Button label="KRDS 버튼" icon="flame" icon-pos="left" type="secondary" size="small" />
-        <Button icon="instagram" icon-pos="left" type="tertiary" size="small" />
+        <Button label="버튼 : primary" type="primary" size="medium" icon="check" icon-pos="left" />
+        <Button label="버튼 : secondary" type="secondary" size="medium" icon="settings" icon-pos="right" />
+        <Button icon="search" type="primary" size="medium" />  <!-- ✅ 아이콘만 있는 원형 버튼 -->
+        <Button label="비활성화" type="primary" size="medium" :disabled="true" />
       </div>
       <div class="flex flex-col gap-4">
         <Link label="기본 링크" href="https://www.site_name.com/" size="small" underline external target="_blank" title="새 창 열림" />
@@ -54,12 +64,85 @@ const selectedStates = ref([false, false, false]); // 체크 상태 유지 (true
         <Radio v-model="selectedValue" name="group1" value="large" label="Large" size="large" />
         {{selectedValue}}
       </div>
-
       <div>
-        <CheckBox v-model="selectedStates" :items="checkboxItems" size="medium" />
-        <p>선택 상태: {{ selectedStates }}</p>
+        <CheckBox v-model="selectedStates" :items="checkboxItems" size="small" :showSelectedItems="false" />
+        <p>선택 상태: {{ selectedItems }}</p>
+      </div>
+      <div>
+      <CheckBox v-model="selectedStates" :items="checkboxItems2" size="medium" :showSelectedItems="false" disabled />
+      <p>선택 상태: {{ selectedItems }}</p>
+    </div>
+      <div>
+        <CheckBox v-model="selectedStates" :items="checkboxItems3" size="large" :showSelectedItems="false" />
+        <p>선택 상태: {{ selectedItems }}</p>
       </div>
     </div>
+
+<div class="w-sm">
+  <Select
+    label="기본 셀렉트"
+    v-model="selected"
+    size="medium"
+    helper-text="기본 도움말의 위치에요."
+    :options="[
+    { value: 'opt1', label: '케이티 위즈' },
+    { value: 'opt2', label: 'KRDS - Selecct 옵션' },
+    { value: 'opt3', label: '대한민국' }
+  ]"
+    placeholder="옵션을 선택하세요."
+    state="default"
+  >
+  </Select>
+  <Select
+    label="스몰 셀렉트"
+    v-model="selected"
+    size="small"
+    helper-text="문제가 발생했어요."
+    :options="[
+    { value: 'opt1', label: '케이티 위즈' },
+    { value: 'opt2', label: 'KRDS - Selecct 옵션' },
+    { value: 'opt3', label: '대한민국' }
+  ]"
+    placeholder="옵션을 선택하세요."
+    state="error"
+  >
+  </Select>
+  <Select
+    label="미디움 셀렉트"
+    v-model="selected"
+    size="medium"
+    helper-text="성공이에요."
+    :options="[
+    { value: 'opt1', label: '케이티 위즈' },
+    { value: 'opt2', label: 'KRDS - Selecct 옵션' },
+    { value: 'opt3', label: '대한민국' }
+  ]"
+    placeholder="옵션을 선택하세요."
+    state="completed"
+  >
+  </Select>
+  <Select
+    label="라지 셀렉트"
+    v-model="selected"
+    size="large"
+    helper-text="비활성화 되었어요."
+    :options="[
+    { value: 'opt1', label: '케이티 위즈' },
+    { value: 'opt2', label: 'KRDS - Selecct 옵션' },
+    { value: 'opt3', label: '대한민국' }
+  ]"
+    placeholder="옵션을 선택하세요."
+    state="disabled"
+  >
+  </Select>
+</div>
+      <div class=" p-3">
+        <Toggle size="small" label="test"  v-model="toggle"/>
+        <br />
+        <Toggle size="medium" label="test"  v-model="toggle"/>
+        <br />
+        <Toggle size="large" label="test"  v-model="toggle"/>
+      </div>
     </div>
   </div>
 </template>

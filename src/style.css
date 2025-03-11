@@ -1,5 +1,7 @@
 @import "tailwindcss";
-
+*{
+  accent-color: var(--color-skyblue-60); /* 강조 색상 변경**/
+}
 @theme {
     --color-primary: #246BEB;
     --color-primary-0: #FFFFFF;
@@ -443,6 +445,15 @@
     --color-blueviolet-100: #000000;
 
 }
+
+.krds-form-check.medium {
+  font-size: 12px;
+}
+
+.krds-form-check.large {
+  font-size: 20px;
+}
+
 @layer components {
     /* Display */
     .text-display-lg { @apply text-[66px] md:text-[40px] font-extrabold leading-[150%] tracking-[1px]; }
