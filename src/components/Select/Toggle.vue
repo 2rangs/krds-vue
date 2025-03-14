@@ -55,7 +55,7 @@ const handleTranslateClass = computed(() => ({
         'relative flex items-center rounded-full cursor-pointer transition-all border',
         'focus:ring-2',
         sizeClass,
-        props.modelValue ? 'bg-primary-50 border-primary-50' : 'bg-gray-30 border-gray-40',
+        props.modelValue ? 'bg-primary border-primary' : 'bg-gray-30 border-gray-40',
         props.disabled ? 'opacity-50 cursor-not-allowed' : ''
       ]"
       @click="toggleSwitch"

@@ -1,48 +1,58 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import { ChevronUp, ChevronDown } from "lucide-vue-next";
+import { ref, computed } from "vue";
+import { ChevronDown } from "lucide-vue-next";
 
-// Props 정의
+type AccordionType = "filled" | "outlined";
+
 const props = defineProps({
   items: {
     type: Array as () => { title: string; content: string }[],
     required: true,
     default: () => [],
   },
+  type: { type: String as () => AccordionType, default: "filled" },
 });
 
-// Emits 정의
 const emit = defineEmits(["onToggle"]);
+const activeIndex = ref<number | null>(null);
 
-// 활성화된 인덱스를 Set으로 관리 (빠른 조회 및 삭제)
-const activeIndexes = ref(new Set<number>());
+const isActive = (index: number) => activeIndex.value === index;
+const isFilledType = computed(() => props.type === "filled");
 
 function toggle(index: number) {
-  if (activeIndexes.value.has(index)) {
-    activeIndexes.value.delete(index);
-  } else {
-    activeIndexes.value.add(index);
-  }
-  emit("onToggle", Array.from(activeIndexes.value)); // 배열 형태로 emit
+  activeIndex.value = isActive(index) ? null : index;
+  emit("onToggle", activeIndex.value);
 }
 </script>
 
 <template>
-  <div class="krds-accordion">
-    <div v-for="(item, index) in items" class="accordion-item">
-      <h5 class="accordion-header"><button type="button" id="accordionHeaderSample01" class="btn-accordion" aria-controls="accordionCollapseSample01">  {{ item.title }}</button></h5>
-      <div id="accordionCollapseSample01" class="accordion-collapse collapse" aria-labelledby="accordionHeaderSample01">
-        <div class="accordion-body">
-          <!-- accordion contents -->
-        <div class="p-3">
-          {{ item.content }}
-        </div>
-          <!-- //accordion contents -->
-        </div>
+  <div class="w-full max-w-2xl mx-auto border-b border-t border-gray-10">
+    <div v-for="(item, index) in items" :key="index">
+      <button
+        class="w-full flex justify-between items-center px-5 py-4 text-left transition cursor-pointer rounded-t-lg"
+        :class="[
+          isActive(index) ? 'text-secondary font-bold' : 'font-bold text-gray-80',
+          isFilledType && isActive(index) ? 'bg-light-secondary-5 mt-2' : '',
+          !isFilledType && isActive(index) ? 'border-t rounded-t-none' : '',
+        ]"
+        @click="toggle(index)"
+      >
+        <span>{{ item.title }}</span>
+        <ChevronDown
+          class="w-5 h-5 transition-transform duration-200 ease-out"
+          :class="isActive(index) ? 'rotate-180' : 'text-gray-50'"
+        />
+      </button>
+
+      <div
+        class="overflow-hidden transition-all duration-200 ease-out mb-2"
+        :class="[
+          isActive(index) ? 'max-h-[200px] opacity-100 px-5 py-4 overflow-y-auto scroll-smooth scrollbar-thin scrollbar-thumb-gray-30 scrollbar-track-gray-10' : 'max-h-0 opacity-0',
+          isFilledType && isActive(index) ? 'bg-light-secondary-5 rounded-b-lg' : 'bg-white',
+        ]"
+      >
+        <p class="text-gray-80">{{ item.content }}</p>
       </div>
     </div>
   </div>
 </template>
-
-<style scoped>
-</style>

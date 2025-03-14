@@ -1,6 +1,6 @@
 @import "tailwindcss";
 *{
-  accent-color: var(--color-skyblue-60); /* 강조 색상 변경**/
+  accent-color: var(--color-primary); /* 강조 색상 변경**/
 }
 @theme {
     --color-primary: #246BEB;
@@ -45,6 +45,18 @@
     --color-dark-secondary-80: #13343C;
     --color-dark-secondary-90: #0C1D21;
     --color-dark-secondary-100: #000000;
+
+ --color-light-secondary-5: #eef2f7;
+ --color-light-secondary-10: #d6e0eb;
+ --color-light-secondary-20: #bacbde;
+ --color-light-secondary-30: #90b0d5;
+ --color-light-secondary-40: #6b96c7;
+ --color-light-secondary-50: #346fb2;
+ --color-light-secondary-60: #1c589c;
+ --color-light-secondary-70: #063a74;
+ --color-light-secondary-80: #052b57;
+ --color-light-secondary-90: #031f3f;
+ --color-light-secondary-95: #02162c;
     /* Gray */
     --color-gray-0: #FFFFFF;
     --color-gray-5: #F8F8F8;
@@ -446,13 +458,6 @@
 
 }
 
-.krds-form-check.medium {
-  font-size: 12px;
-}
-
-.krds-form-check.large {
-  font-size: 20px;
-}
 
 @layer components {
     /* Display */

@@ -25,7 +25,7 @@ const props = withDefaults(
     placeholder: "선택",
     size: "medium",
     state: "default",
-    label: "레이블",
+    label: "",
   }
 );
 
@@ -102,9 +102,9 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="relative w-full" ref="selectRef">
+  <div class="relative w-full min-w-[100px]" ref="selectRef">
     <!-- Label -->
-    <label :for="id" class="block text-gray-800 font-medium mb-2">{{ label }}</label>
+    <label v-if="label" :for="id" class="block text-gray-800 font-medium mb-2">{{ label }}</label>
 
     <!-- Select Box -->
     <div class="relative">
