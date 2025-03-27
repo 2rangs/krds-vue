@@ -1,6 +1,5 @@
 <template>
   <div class="flex flex-col gap-3">
-    <!-- ✅ 전체 선택 체크박스 -->
     <div v-if="items.length >= 2" class="inline-flex items-center gap-2">
       <input
         ref="selectAllRef"
@@ -23,8 +22,6 @@
         전체 선택
       </label>
     </div>
-
-    <!-- ✅ 개별 체크박스 -->
     <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
       <div
         v-for="(item, index) in items"
@@ -67,8 +64,6 @@ const props = defineProps({
 const emit = defineEmits(["update:modelValue"]);
 const selectAllRef = ref<HTMLInputElement | null>(null);
 const indeterminateState = ref(false);
-
-// ✅ 전체 선택 체크박스 상태 계산
 const selectAllChecked = computed({
   get: () => props.modelValue.every(Boolean) && props.modelValue.length > 0,
   set: (value) => {
@@ -77,8 +72,6 @@ const selectAllChecked = computed({
     }
   }
 });
-
-// ✅ 중간 상태 감지
 watch(
   () => props.modelValue,
   (newVal) => {
@@ -91,15 +84,12 @@ watch(
   },
   { deep: true, immediate: true }
 );
-
-// ✅ 전체 선택/해제
 const toggleSelectAll = () => {
   if (!props.disabled) {
     emit("update:modelValue", props.items.map(() => selectAllChecked.value));
   }
 };
 
-// ✅ Tailwind 크기 클래스 매핑
 const checkboxSize = computed(() => ({
   small: "w-[14px] h-[14px]",
   medium: "w-[18px] h-[18px]",

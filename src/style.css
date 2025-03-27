@@ -3,6 +3,14 @@
   accent-color: var(--color-primary); /* 강조 색상 변경**/
 }
 @theme {
+  /* Breakpoints */
+  --breakpoint-xsmall: 0px;      /* ~359px 이하 */
+  --breakpoint-small: 360px;     /* 360px~ */
+  --breakpoint-medium: 768px;    /* 768px~ */
+  --breakpoint-large: 1024px;    /* 1024px~ */
+  --breakpoint-xlarge: 1280px;   /* 1280px~ */
+  --breakpoint-xxlarge: 1440px;  /* 1440px~ */
+
     --color-primary: #246BEB;
     --color-primary-0: #FFFFFF;
     --color-primary-5: #EFF5FF;
@@ -461,58 +469,73 @@
 
 @layer components {
     /* Display */
-    .text-display-lg { @apply text-[66px] md:text-[40px] font-extrabold leading-[150%] tracking-[1px]; }
-    .text-display-md { @apply text-[50px] md:text-[32px] font-extrabold leading-[150%] tracking-[1px]; }
-    .text-display-sm { @apply text-[40px] md:text-[25px] font-bold leading-[150%] tracking-[0.5px]; }
+    /* 디스플레이(Display)는 화면에서 가장 큰 텍스트로 주로 배너와 같은 마케팅 용도로 사용하며, 자유롭게 변형할 수 있으나 과도한 크기 사용은 지양한다. */
+    .text-display-lg { @apply text-[44px] md:text-[60px] font-extrabold leading-[150%] tracking-[1px]; }
+    .text-display-md { @apply text-[32px] md:text-[44px] font-extrabold leading-[150%] tracking-[1px]; }
+    .text-display-sm { @apply text-[28px] md:text-[36px] font-bold leading-[150%] tracking-[1px]; }
 
     /* Heading */
-    .text-heading-lg { @apply text-[50px] md:text-[40px] font-bold leading-[150%] tracking-[0.5px]; }
-    .text-heading-md { @apply text-[40px] md:text-[32px] font-bold leading-[150%] tracking-[0.5px]; }
-    .text-heading-sm { @apply text-[32px] md:text-[25px] font-bold leading-[150%] tracking-[0.5px]; }
-
-    /* Title */
-    .text-title-xxl { @apply text-[32px] md:text-[25px] font-bold leading-[150%] tracking-[0.5px]; }
-    .text-title-xl  { @apply text-[25px] md:text-[25px] font-bold leading-[150%]; }
-    .text-title-lg  { @apply text-[21px] md:text-[21px] font-bold leading-[150%]; }
-    .text-title-md  { @apply text-[19px] md:text-[19px] font-semibold leading-[150%]; }
-    .text-title-sm  { @apply text-[17px] md:text-[17px] font-semibold leading-[150%]; }
-    .text-title-xs  { @apply text-[15px] md:text-[15px] font-semibold leading-[150%]; }
+    /* 헤딩(Heading)은 페이지 단위의 타이틀과 모듈 단위의 역할을 강조하는 데 사용하며, h2부터 h6까지 계층을 설정한다. */
+    .text-heading-xl  { @apply text-[28px] md:text-[40px] font-bold leading-[150%] tracking-[1px]; }
+    .text-heading-lg  { @apply text-[24px] md:text-[32px] font-bold leading-[150%] tracking-[1px]; }
+    .text-heading-md  { @apply text-[22px] md:text-[24px] font-bold leading-[150%]; }
+    .text-heading-sm  { @apply text-[19px] md:text-[19px] font-bold leading-[150%]; }
+    .text-heading-xs  { @apply text-[17px] md:text-[17px] font-bold leading-[150%]; }
+    .text-heading-xxs { @apply text-[15px] md:text-[15px] font-bold leading-[150%]; }
 
     /* Body */
-    .text-body-lg { @apply text-[19px] md:text-[19px] font-normal leading-[150%]; }
-    .text-body-md { @apply text-[17px] md:text-[17px] font-normal leading-[150%]; }
-    .text-body-sm { @apply text-[15px] md:text-[15px] font-normal leading-[150%]; }
+    /* 본문과 기본 콘텐츠에 적용된다. */
+    /* Body - Regular weight (400) */
+    .text-body-lg     { @apply text-[19px] md:text-[19px] font-normal leading-[150%]; }
+    .text-body-md     { @apply text-[17px] md:text-[17px] font-normal leading-[150%]; }
+    .text-body-sm     { @apply text-[15px] md:text-[15px] font-normal leading-[150%]; }
+    .text-body-xs     { @apply text-[13px] md:text-[13px] font-normal leading-[150%]; }
+    /* Body - Bold weight (700) */
+    .text-body-lg-bold     { @apply text-[19px] md:text-[19px] font-bold leading-[150%]; }
+    .text-body-md-bold     { @apply text-[17px] md:text-[17px] font-bold leading-[150%]; }
+    .text-body-sm-bold     { @apply text-[15px] md:text-[15px] font-bold leading-[150%]; }
+    .text-body-xs-bold     { @apply text-[13px] md:text-[13px] font-bold leading-[150%]; }
 
-    /* Detail */
-    .text-detail-lg { @apply text-[17px] md:text-[17px] font-light leading-[150%]; }
-    .text-detail-md { @apply text-[15px] md:text-[15px] font-light leading-[150%]; }
-    .text-detail-sm { @apply text-[13px] md:text-[13px] font-light leading-[150%]; }
+    /* Navigation */
+    /*Navigation은 사이트 내 이정표 역할을 하는 컴포넌트 내에서 사용한다.*/
 
-    /* Label */
-    .text-label-lg { @apply text-[19px] md:text-[19px] font-medium leading-[150%]; }
-    .text-label-md { @apply text-[17px] md:text-[17px] font-medium leading-[150%]; }
-    .text-label-sm { @apply text-[15px] md:text-[15px] font-medium leading-[150%]; }
-    .text-label-xs { @apply text-[13px] md:text-[13px] font-medium leading-[150%]; }
+    /* Title (1Depth) */
+    .text-nav-title-lg   { @apply text-[22px] md:text-[24px] font-bold leading-[150%]; }
+    .text-nav-title-sm   { @apply text-[17px] md:text-[19px] font-bold leading-[150%]; }
+
+    /* Depth (하위 메뉴) */
+    .text-nav-depth-md-bold  { @apply text-[17px] md:text-[17px] font-bold leading-[150%]; }
+    .text-nav-depth-md       { @apply text-[17px] md:text-[17px] font-normal leading-[150%]; }
+
+    .text-nav-depth-sm-bold  { @apply text-[15px] md:text-[15px] font-bold leading-[150%]; }
+    .text-nav-depth-sm       { @apply text-[15px] md:text-[15px] font-normal leading-[150%]; }
+
+  /* Label */
+    /* 컴포넌트 구성 내 label, placeholder 등에 사용한다. */
+    .text-label-lg { @apply text-[19px] md:text-[19px] font-normal leading-[150%]; }
+    .text-label-md { @apply text-[17px] md:text-[17px] font-normal leading-[150%]; }
+    .text-label-sm { @apply text-[15px] md:text-[15px] font-normal leading-[150%]; }
+    .text-label-xs { @apply text-[13px] md:text-[13px] font-normal leading-[150%]; }
 
     /* Links */
     .text-link-lg { @apply text-[19px] md:text-[19px] font-semibold leading-[150%] underline; }
     .text-link-md { @apply text-[17px] md:text-[17px] font-semibold leading-[150%] underline; }
     .text-link-sm { @apply text-[15px] md:text-[15px] font-semibold leading-[150%] underline; }
+
     /* Radius */
+
     /* XSmall */
-    .radius-xs { @apply rounded-sm; } /* 2px */
+    .rounded-xs { @apply rounded-sm; } /* 2px */
     /* Small */
-    .radius-sm { @apply rounded; } /* 4px */
+    .rounded-sm { @apply rounded; } /* 4px */
     /* Medium */
-    .radius-md { @apply rounded-md; } /* 6px */
+    .rounded-md { @apply rounded-md; } /* 6px */
     /* Large */
-    .radius-lg { @apply rounded-lg; } /* 8px */
+    .rounded-lg { @apply rounded-lg; } /* 8px */
     /* XLarge */
-    .radius-xl { @apply rounded-xl; } /* 12px */
-    /* XXLarge (추가) */
-    .radius-2xl { @apply rounded-2xl; } /* 16px */
-    /* Full radius for circular elements */
-    .radius-full { @apply rounded-full; } /* 9999px */
+    .rounded-xl { @apply rounded-xl; } /* 12px */
+    /* 혹시 모르니까 표기해드립니다. */
+    /*.rounded-full { @apply rounded-full; }*/
 
     /* Gap */
     .gap-1 { @apply gap-[2px]; }
@@ -529,15 +552,15 @@
     .gap-12 { @apply gap-[80px]; }
 
     /* Padding */
-    .padding-1 { @apply p-[2px]; }
-    .padding-2 { @apply p-[4px]; }
-    .padding-3 { @apply p-[8px]; }
-    .padding-4 { @apply p-[12px]; }
-    .padding-5 { @apply p-[16px]; }
-    .padding-6 { @apply p-[20px]; }
-    .padding-7 { @apply p-[24px]; }
-    .padding-8 { @apply p-[32px]; }
-    .padding-9 { @apply p-[40px]; }
-    .padding-10 { @apply p-[48px]; }
+    .p-1 { @apply p-[2px]; }
+    .p-2 { @apply p-[4px]; }
+    .p-3 { @apply p-[8px]; }
+    .p-4 { @apply p-[10px]; }
+    .p-5 { @apply p-[12px]; }
+    .p-6 { @apply p-[16px]; }
+    .p-7 { @apply p-[20px]; }
+    .p-8 { @apply p-[24px]; }
+    .p-9 { @apply p-[32px]; }
+    .p-10 { @apply p-[40px]; }
 
 }

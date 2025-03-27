@@ -102,7 +102,7 @@ const selectedItems = computed(() =>
       </div>
     </div>
 
-<div class="w-sm">
+<div class="w-sm grid  gap-5">
   <Select
     label="기본 셀렉트"
     v-model="selected"

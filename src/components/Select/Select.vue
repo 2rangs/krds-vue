@@ -31,7 +31,6 @@ const props = withDefaults(
 
 const emit = defineEmits(["update:modelValue"]);
 
-const id = `select-${Math.random().toString(36).substring(2, 9)}`;
 const isOpen = ref(false);
 const selectRef = ref<HTMLElement | null>(null);
 
@@ -63,9 +62,9 @@ const iconColor = computed(() => ({
 
 // 도움말 색상
 const hintClass = computed(() => ({
-  default: "text-gray-500",
-  completed: "text-green-500",
-  error: "text-red-500",
+  default: "text-gray-50",
+  completed: "text-green-50",
+  error: "text-red-50",
   disabled: "text-gray-400",
 }[props.state]));
 
@@ -104,7 +103,7 @@ onUnmounted(() => {
 <template>
   <div class="relative w-full min-w-[100px]" ref="selectRef">
     <!-- Label -->
-    <label v-if="label" :for="id" class="block text-gray-800 font-medium mb-2">{{ label }}</label>
+    <label v-if="label" class="block text-gray-800 font-medium mb-2">{{ label }}</label>
 
     <!-- Select Box -->
     <div class="relative">
@@ -170,6 +169,7 @@ onUnmounted(() => {
   align-items: center;
   padding: 10px 12px;
   cursor: pointer;
+  border-radius: 5px;
   transition: background 0.2s;
 }
 
