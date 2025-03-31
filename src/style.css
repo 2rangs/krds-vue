@@ -2,6 +2,7 @@
 *{
   accent-color: var(--color-primary); /* 강조 색상 변경**/
 }
+
 @theme {
   /* Breakpoints */
   --breakpoint-xsmall: 0px;      /* ~359px 이하 */
@@ -562,5 +563,452 @@
     .p-8 { @apply p-[24px]; }
     .p-9 { @apply p-[32px]; }
     .p-10 { @apply p-[40px]; }
-
+  .bg-ci_daree_logo {
+    width: 100px; height: 22px;
+    background: url('assets/css_sprites.png') -490px -371px;
+  }
+  .bg-ci_dareesoft_bridge {
+    width: 100px; height: 26px;
+    background: url('assets/css_sprites.png') -250px -371px;
+  }
+  .bg-ci_dareesoft_logo {
+    width: 100px; height: 26px;
+    background: url('assets/css_sprites.png') -370px -371px;
+  }
+  .bg-ci_riaas_logo {
+    width: 100px; height: 33px;
+    background: url('assets/css_sprites.png') -130px -371px;
+  }
+  .bg-head_ico_font_sample_white {
+    width: 30px; height: 30px;
+    background: url('assets/css_sprites.png') -182px -424px;
+  }
+  .bg-head_ico_font_sample {
+    width: 30px; height: 30px;
+    background: url('assets/css_sprites.png') -232px -424px;
+  }
+  .bg-favicon {
+    width: 16px; height: 16px;
+    background: url('assets/css_sprites.png') -574px -491px;
+  }
+  .bg-ico_all {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -310px -491px;
+  }
+  .bg-ico_angle_disabled_inverse {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -354px -491px;
+  }
+  .bg-ico_angle_disabled {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -398px -491px;
+  }
+  .bg-ico_angle_inverse {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -442px -491px;
+  }
+  .bg-ico_angle {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -486px -491px;
+  }
+  .bg-ico_arrow_dropdown {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -530px -491px;
+  }
+  .bg-ico_bread_home {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -10px -541px;
+  }
+  .bg-ico_blog {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -54px -541px;
+  }
+  .bg-ico_calendar {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -98px -541px;
+  }
+  .bg-ico_call {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -142px -541px;
+  }
+  .bg-ico_checkbox_checked {
+    width: 16px; height: 16px;
+    background: url('assets/css_sprites.png') -474px -629px;
+  }
+  .bg-ico_complete_fill {
+    width: 20px; height: 20px;
+    background: url('assets/css_sprites.png') -274px -629px;
+  }
+  .bg-ico_close {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -186px -541px;
+  }
+  .bg-ico_delete_fill {
+    width: 20px; height: 20px;
+    background: url('assets/css_sprites.png') -314px -629px;
+  }
+  .bg-ico_delete {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -230px -541px;
+  }
+  .bg-ico_download {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -274px -541px;
+  }
+  .bg-ico_ellipsis {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -318px -541px;
+  }
+  .bg-ico_email {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -362px -541px;
+  }
+  .bg-ico_error_fill {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -406px -541px;
+  }
+  .bg-ico_facebook {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -450px -541px;
+  }
+  .bg-ico_expand {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -494px -541px;
+  }
+  .bg-ico_flag {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -538px -541px;
+  }
+  .bg-ico_foldable {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -610px -10px;
+  }
+  .bg-ico_faq {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -610px -54px;
+  }
+  .bg-ico_file {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -610px -98px;
+  }
+  .bg-ico_filter {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -610px -142px;
+  }
+  .bg-ico_flow_arrow {
+    width: 26px; height: 7px;
+    background: url('assets/css_sprites.png') -546px -629px;
+  }
+  .bg-ico_help_fill {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -610px -186px;
+  }
+  .bg-ico_go {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -610px -230px;
+  }
+  .bg-ico_global {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -610px -274px;
+  }
+  .bg-ico_help {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -610px -318px;
+  }
+  .bg-ico_information_fill {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -610px -362px;
+  }
+  .bg-ico_join {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -610px -406px;
+  }
+  .bg-ico_go_top {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -610px -450px;
+  }
+  .bg-ico_login_certify_type_03 {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -610px -494px;
+  }
+  .bg-ico_login_certify_type_02 {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -610px -538px;
+  }
+  .bg-ico_information_fill_high_contrast {
+    width: 20px; height: 20px;
+    background: url('assets/css_sprites.png') -354px -629px;
+  }
+  .bg-ico_information {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -10px -585px;
+  }
+  .bg-ico_instagram {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -54px -585px;
+  }
+  .bg-ico_login_certify_go {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -98px -585px;
+  }
+  .bg-ico_logout {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -142px -585px;
+  }
+  .bg-ico_login_certify_type_01 {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -186px -585px;
+  }
+  .bg-ico_like {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -230px -585px;
+  }
+  .bg-ico_login_certify_type_05 {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -274px -585px;
+  }
+  .bg-ico_login_certify_type_06 {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -318px -585px;
+  }
+  .bg-ico_login {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -362px -585px;
+  }
+  .bg-ico_login_certify_type_04 {
+    width: 32px; height: 32px;
+    background: url('assets/css_sprites.png') -130px -424px;
+  }
+  .bg-ico_more {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -406px -585px;
+  }
+  .bg-ico_my {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -450px -585px;
+  }
+  .bg-ico_notice_fill_blue {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -494px -585px;
+  }
+  .bg-ico_notice_fill_high_contrast {
+    width: 20px; height: 20px;
+    background: url('assets/css_sprites.png') -394px -629px;
+  }
+  .bg-ico_notice_fill {
+    width: 20px; height: 20px;
+    background: url('assets/css_sprites.png') -434px -629px;
+  }
+  .bg-ico_plus {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -538px -585px;
+  }
+  .bg-ico_print {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -582px -585px;
+  }
+  .bg-ico_pw_visible_on {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -654px -10px;
+  }
+  .bg-ico_pw_visible_off {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -654px -54px;
+  }
+  .bg-ico_reset {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -654px -98px;
+  }
+  .bg-ico_sch_plus {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -654px -142px;
+  }
+  .bg-ico_scrap {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -654px -186px;
+  }
+  .bg-ico_sch {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -654px -230px;
+  }
+  .bg-ico_setting {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -654px -274px;
+  }
+  .bg-ico_share {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -654px -318px;
+  }
+  .bg-ico_sns_x {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -654px -362px;
+  }
+  .bg-ico_step_done {
+    width: 16px; height: 16px;
+    background: url('assets/css_sprites.png') -510px -629px;
+  }
+  .bg-ico_success_fill {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -654px -406px;
+  }
+  .bg-ico_swiper_play {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -654px -450px;
+  }
+  .bg-ico_swiper_stop {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -654px -494px;
+  }
+  .bg-ico_switch_off {
+    width: 10px; height: 11px;
+    background: url('assets/css_sprites.png') -698px -10px;
+  }
+  .bg-ico_switch_on {
+    width: 10px; height: 11px;
+    background: url('assets/css_sprites.png') -698px -41px;
+  }
+  .bg-ico_tooltip {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -654px -538px;
+  }
+  .bg-ico_upload {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -654px -582px;
+  }
+  .bg-ico_urgent_badge_danger {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -10px -629px;
+  }
+  .bg-ico_urgent_badge_info {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -54px -629px;
+  }
+  .bg-ico_urgent_badge_ok {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -98px -629px;
+  }
+  .bg-ico_view_mode {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -142px -629px;
+  }
+  .bg-ico_warning_fill {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -186px -629px;
+  }
+  .bg-ico_youtube {
+    width: 24px; height: 24px;
+    background: url('assets/css_sprites.png') -230px -629px;
+  }
+  .bg-01n {
+    width: 100px; height: 100px;
+    background: url('assets/css_sprites.png') -130px -10px;
+  }
+  .bg-02d {
+    width: 100px; height: 100px;
+    background: url('assets/css_sprites.png') -250px -10px;
+  }
+  .bg-02n {
+    width: 100px; height: 100px;
+    background: url('assets/css_sprites.png') -10px -131px;
+  }
+  .bg-01d {
+    width: 100px; height: 100px;
+    background: url('assets/css_sprites.png') -130px -131px;
+  }
+  .bg-03d {
+    width: 100px; height: 100px;
+    background: url('assets/css_sprites.png') -250px -131px;
+  }
+  .bg-03n {
+    width: 100px; height: 100px;
+    background: url('assets/css_sprites.png') -370px -10px;
+  }
+  .bg-04d {
+    width: 100px; height: 100px;
+    background: url('assets/css_sprites.png') -370px -130px;
+  }
+  .bg-09d {
+    width: 100px; height: 100px;
+    background: url('assets/css_sprites.png') -10px -251px;
+  }
+  .bg-10d {
+    width: 100px; height: 100px;
+    background: url('assets/css_sprites.png') -130px -251px;
+  }
+  .bg-10n {
+    width: 100px; height: 100px;
+    background: url('assets/css_sprites.png') -250px -251px;
+  }
+  .bg-10s {
+    width: 100px; height: 100px;
+    background: url('assets/css_sprites.png') -370px -251px;
+  }
+  .bg-10w {
+    width: 100px; height: 100px;
+    background: url('assets/css_sprites.png') -490px -10px;
+  }
+  .bg-11d {
+    width: 100px; height: 101px;
+    background: url('assets/css_sprites.png') -10px -10px;
+  }
+  .bg-13d {
+    width: 100px; height: 100px;
+    background: url('assets/css_sprites.png') -490px -130px;
+  }
+  .bg-50d {
+    width: 100px; height: 100px;
+    background: url('assets/css_sprites.png') -490px -250px;
+  }
+  .bg-52d {
+    width: 100px; height: 100px;
+    background: url('assets/css_sprites.png') -10px -371px;
+  }
+  .bg-hazard_1 {
+    width: 30px; height: 30px;
+    background: url('assets/css_sprites.png') -282px -424px;
+  }
+  .bg-hazard_3 {
+    width: 30px; height: 30px;
+    background: url('assets/css_sprites.png') -332px -424px;
+  }
+  .bg-hazard_2 {
+    width: 30px; height: 30px;
+    background: url('assets/css_sprites.png') -382px -424px;
+  }
+  .bg-hazard_4 {
+    width: 30px; height: 30px;
+    background: url('assets/css_sprites.png') -432px -424px;
+  }
+  .bg-hazard_5 {
+    width: 30px; height: 30px;
+    background: url('assets/css_sprites.png') -482px -424px;
+  }
+  .bg-hazard_6 {
+    width: 30px; height: 30px;
+    background: url('assets/css_sprites.png') -532px -424px;
+  }
+  .bg-hazard_7 {
+    width: 30px; height: 30px;
+    background: url('assets/css_sprites.png') -10px -491px;
+  }
+  .bg-hazard_8 {
+    width: 30px; height: 30px;
+    background: url('assets/css_sprites.png') -60px -491px;
+  }
+  .bg-hazard_9 {
+    width: 30px; height: 30px;
+    background: url('assets/css_sprites.png') -110px -491px;
+  }
+  .bg-hazard_12 {
+    width: 30px; height: 30px;
+    background: url('assets/css_sprites.png') -160px -491px;
+  }
+  .bg-hazard_13 {
+    width: 30px; height: 30px;
+    background: url('assets/css_sprites.png') -210px -491px;
+  }
+  .bg-hazard_14 {
+    width: 30px; height: 30px;
+    background: url('assets/css_sprites.png') -260px -491px;
+  }
 }

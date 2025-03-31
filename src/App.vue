@@ -176,6 +176,7 @@ const selectedItems = computed(() =>
         <!-- ✅ 선택된 날짜 표시 -->
         <p class="mt-2 text-lg font-medium">선택한 날짜: {{ daterange }}</p>
       </div>
+      <div class="bg-ci_daree_logo" />
     </div>
   </div>
 </template>
